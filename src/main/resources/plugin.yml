@@ -1,17 +1,14 @@
 ## CHANGE 更改此处为你的附属名称
-name: SlimefunAddon
+name: RailTransit
 
 ## CHANGE 更改此处为你的名称
-author: CHANGEME
+author: yxy317coder
 
 ## CHANGE 这是对你插件的介绍
-description: A generic Slimefun4-Addon
+description: A generic Slimefun4-Addon that can control a tiny railway system!
 
 ## CHANGE 指向你的 JavaPlugin 主类
-main: me.CHANGEME.slimefunaddon.ExampleAddon
-
-## 你可以更改为你的项目仓库地址，或者你的个人网站。你也可以移除此项目。
-website: https://github.com/Slimefun/Addon-Template
+main: me.yxy317coder.slimefunaddon.ExampleAddon
 
 ## 该值将在构建时被自动替换为pom.xml中定义的版本。
 ## 不要更改此项目。
@@ -23,3 +20,16 @@ api-version: 1.14
 ## 指定 Slimefun 作为依赖项，必须
 depend:
 - Slimefun
+
+commands:
+  railtransit:
+    description: 轨道交通插件的主命令
+    usage: /railtransit
+    aliases: [rt, railway]
+    permission: railtransit.use
+    permission-message: 呃你好像不能用介个
+  railtransfer:
+    description: 轨道交通线路运营指令
+    usage: /railtransfer select [组织id] [线路id]
+    permission: railtransit.use
+    permission-message: 呃你好像不能使用该指令
