@@ -1,2 +1,5 @@
 options:
   auto-update: true
+  private:
+    enable: true #允许私人铁路组织
+  
