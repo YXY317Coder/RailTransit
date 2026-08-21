@@ -1,0 +1,14 @@
+{
+    "platform": [
+        {
+            "name": "spawn",
+            "position": {
+                "x": 0,
+                "y": 63,
+                "z": 0
+            }
+        }
+    ],
+    "line": [
+    ]
+}
